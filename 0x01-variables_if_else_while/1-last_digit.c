@@ -1,37 +1,32 @@
+#include <stdlib.h>
+#include <time.h>
 #include <stdio.h>
 
 /**
- * main - Prints numbers between 00 to 89.
+ * main - Prints a text according number
  *
- * Return: Always 0 (Success)
+ * Return: Always (Success)
  */
 int main(void)
 {
-	int i, e;
+	int n, lastd;
 
-	i = 48;
-	e = 48;
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	lastd = n % 10;
 
-	while (e < 58)
+	if (lastd > 5)
 	{
-		i = 48;
-		while (i < 58)
-		{
-			if (e != i && e < i)
-			{
-				putchar(e);
-				putchar(i);
-				if (i == 57 && e == 56)
-				{
-					break;
-				}
-				putchar(',');
-				putchar(' ');
-			}
-			i++;
-		}
-		e++;
+		printf("Last digit of %d is %d and is greater than 5\n", n, lastd);
 	}
-	putchar('\n');
+	else if (lastd == 0)
+	{
+		printf("Last digit of %d is %d and is 0\n", n, lastd);
+	}
+	else if (lastd < 6 && lastd != 0)
+	{
+		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, lastd);
+	}
+
 	return (0);
 }
