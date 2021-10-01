@@ -1,25 +1,38 @@
-#include <stdlib.h>
-#include <stdio.h>
-#include <time.h>
-/*
- * main - print the last nigit of the number
- *
- * Return: (0)
- *
- */
 
-/* betty style doc for function main goes there */
+#include <stdio.h>
+
+/**
+ * main - Prints numbers between 00 to 89.
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-	int n;
+	int i, e;
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-	if (n == 0)
-	printf("%d and is 0\n", n);
-	else if (n > 5)
-	printf("%d is greater than 5\n", n);
-	else if (n < 6 && n != 0 )
-	printf("%d and is less than 6 and not 0\n", n);
+	i = 48;
+	e = 48;
+
+	while (e < 58)
+	{
+		i = 48;
+		while (i < 58)
+		{
+			if (e != i && e < i)
+			{
+				putchar(e);
+				putchar(i);
+				if (i == 57 && e == 56)
+				{
+					break;
+				}
+				putchar(',');
+				putchar(' ');
+			}
+			i++;
+		}
+		e++;
+	}
+	putchar('\n');
 	return (0);
 }
