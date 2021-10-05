@@ -1,11 +1,5 @@
 #include <stdio.h>
-#include <conio.h>
 #include <stdlib.h>
-#include <math.h>
-#include <time.h>
-#include <ctype.h>
-#include <string.h>
-#include <locale.h>
 void print_alphabet(void);
 void print_alphabet_x10(void);
 int _islower(int c);
