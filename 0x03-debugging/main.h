@@ -2,5 +2,7 @@
 #define MAIN_H
 #include <stdlib.h>
 #include <stdio.h>
-int positive_or_negative(int n);
+int main(void);
+
+void positive_or_negative(int i);
 #endif
