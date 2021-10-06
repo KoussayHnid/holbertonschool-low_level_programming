@@ -6,13 +6,13 @@
  */
 void times_table(void)
 {
-	int x, y, product;
+	int x, y, z;
 
 	for (x = 0; x <= 9; x++)
 	{
 		for (y = 0; y <= 9; y++)
 		{
-			product = x * y;
+			z = x * y;
 			if (y != 0)
 			{
 				_putchar(',');
@@ -22,15 +22,15 @@ void times_table(void)
 			{
 				_putchar('0');
 			}
-			else if (product >= 10)
+			else if (z >= 10)
 			{
-				_putchar((product / 10) + '0');
-				_putchar((product % 10) + '0');
+				_putchar((z / 10) + '0');
+				_putchar((z % 10) + '0');
 			}
-			else if ((product < 10) && (y != 0))
+			else if ((z < 10) && (y != 0))
 			{
 				_putchar(' ');
-				_putchar((product % 10) + '0');
+				_putchar((z % 10) + '0');
 			}
 		}
 		_putchar('\n');
