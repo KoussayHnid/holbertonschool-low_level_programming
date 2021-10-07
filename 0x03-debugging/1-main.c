@@ -1,10 +1,12 @@
 #include "main.h"
+
 /**
 * main -  infinite loop
+*
 * Return: 0
 */
-int main(void)
-{
+
+int main()
 
 	int i;
 
