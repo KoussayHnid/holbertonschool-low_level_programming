@@ -1,16 +1,27 @@
 #include "main.h"
+
 /**
 * main -  infinite loop
+*
 * Return: 0
 */
+<<<<<<< HEAD
 int main(void)
 {
-/**
-*	int i;
-*
-*	printf("Infinite loop incoming :(\n");
-*
-*	i = 0;
+=======
+
+int main()
+{
+	int i;
+
+	printf("Infinite loop incoming :(\n");
+
+	int i;
+
+	printf("Infinite loop incoming :(\n");
+
+	i = 0;
+/**	
 *	 while (i < 10)
 *	{
 *		putchar(i);
