@@ -1,10 +1,18 @@
 #include "main.h"
 /**
- *_puts - that prints a string followed by a new line
- *@str: char
+ * _puts - prints a string
+ * @str: the string
+ *
+ * Return: the length of a string
  */
 void _puts(char *str)
 {
-_putchar("%s", str);
-_putchar("\n");
+	int i = 0;
+
+	while (str[i] != '\0')
+	{
+		_putchar(str[i]);
+		i++;
+	}
+	_putchar('\n');
 }
