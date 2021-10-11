@@ -2,7 +2,7 @@
 /**
  *rev_string - reverses a string
  *
- *
+ *@s: holi
  */
 void rev_string(char *s)
 {
@@ -22,9 +22,9 @@ void rev_string(char *s)
 
 	while (i < j)
 	{
-		temp = s[i];
+		tmp = s[i];
 		s[i] = s[j];
-		s[j] = temp;
+		s[j] = tmp;
 		i++;
 		j--;
 	}
