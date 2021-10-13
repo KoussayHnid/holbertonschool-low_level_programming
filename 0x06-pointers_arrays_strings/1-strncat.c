@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 
 /**
  * _strncat - pointer function with 3 argument
