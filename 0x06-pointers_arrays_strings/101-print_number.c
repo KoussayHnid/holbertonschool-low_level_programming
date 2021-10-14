@@ -3,7 +3,7 @@
  * print_number - function with one argument
  * @n: int
  *
- * Return: value of n
+ * Return: n
  */
 void print_number(int n)
 {
