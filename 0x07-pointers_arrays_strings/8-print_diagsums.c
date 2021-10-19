@@ -1,19 +1,23 @@
 #include "main.h"
 
 /**
- * print_chessboard - function with 1 argument
- * @a: char
+ * print_diagsums - function with two arguments
+ * @a: int
+ * @size: int
  *
- * Return: na
+ * Return: value
  */
-void print_chessboard(char (*a)[8])
+void print_diagsums(int *a, int size)
 {
-	int i, j;
+	int i, x, y;
 
-	for (i = 0; i < 8; i++)
+	x = 0;
+	y = 0;
+
+	for (i = 0; i < size; i++)
 	{
-		for (j = 0; j < 8; j++)
-			_putchar(a[i][j]);
-		_putchar('\n');
+		x += *(a + i * (size + 1));
+		y += *(a + (i + 1) * (size - 1));
 	}
+	printf("%d, %d\n", x, y);
 }
