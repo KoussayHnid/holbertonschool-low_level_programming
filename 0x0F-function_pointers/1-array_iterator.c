@@ -4,7 +4,7 @@
  * array_iterator - function with 3 arguments
  * @array: int
  * @size: int
- * @action: function 
+ * @action: function
  *
  * Description: executes a function given as a parameter on each element
  * Return: void
