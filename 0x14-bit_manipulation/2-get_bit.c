@@ -5,7 +5,7 @@
  * @n: int
  * @index: int
  *
- * Return: 0 or -1 
+ * Return: 0 or -1
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
@@ -15,9 +15,7 @@ int get_bit(unsigned long int n, unsigned int index)
 	}
 	n  = n >> index;
 	if (n & 1)
-	
 		return (1);
 	else
 		return (0);
-	
 }
