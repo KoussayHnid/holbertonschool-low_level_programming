@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
-  * read_textfile - that reads a text file and prints it to the POSIX standard output.
+  * read_textfile - that reads a text file and
+  * prints it to the POSIX standard output.
   * @filename:  file
   * @letters: int
   *
