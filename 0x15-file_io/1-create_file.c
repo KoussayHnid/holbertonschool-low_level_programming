@@ -1,7 +1,8 @@
 #include "main.h"
+#include <string.h>
 
 /**
- *create_file - function that creates a file.
+  * create_file - function that creates a file.
   * @filename: file
   * @text_content: char
   *
@@ -19,24 +20,8 @@ int create_file(const char *filename, char *text_content)
 		return (-1);
 
 	if (text_content)
-		write(fd, text_content, _strlen(text_content));
+		write(fd, text_content, strlen(text_content));
 
 	close(fd);
 	return (1);
-}
-
-/**
-  * _strlen - calculat the length of string 
-  * @s: char
-  *
-  * Return: length
-  */
-int _strlen(char *s)
-{
-	int x = 0;
-
-	while (s[x])
-		s++;
-
-	return (x);
 }
