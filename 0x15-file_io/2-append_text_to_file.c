@@ -1,4 +1,5 @@
 #include "main.h"
+#include "string.h"
 
 /**
   * append_text_to_file - that appends text at the end of a file
@@ -26,22 +27,4 @@ int append_text_to_file(const char *filename, char *text_content)
 
 	close(fd);
 	return (1);
-}
-#include "main.h"
-#include <string.h>
-
-/**
-  * strlen - Returns the length of a string
-  * @s: String to count
-  *
-  * Return: String length
-  */
-int strlen(char *s)
-{
-	int x = 0;
-
-	while (s[x])
-		x++;
-
-	return (x);
 }
