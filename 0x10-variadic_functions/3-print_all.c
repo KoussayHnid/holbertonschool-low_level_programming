@@ -1,6 +1,7 @@
 #include <stdarg.h>
 #include <stdio.h>
 #include "variadic_functions.h"
+
 /**
  * print_all - Print strings with a separator.
  * @format: Format string
