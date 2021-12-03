@@ -2,9 +2,10 @@
 
 /**
  * reverse_listint - function with one argument
- * @head: pointer
+ * @head: pointer to head pointer of linked list
  *
- * Return: pointer
+ * Description: reverses a linked list
+ * Return: pointer to the first node of the reversed list
  */
 listint_t *reverse_listint(listint_t **head)
 {
