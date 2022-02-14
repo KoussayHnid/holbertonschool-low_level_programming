@@ -1,3 +1,1 @@
-
-# holbertonschool-low_level_programming
-# simple_shell
+# sorting_algorithms
